@@ -58,7 +58,8 @@ const dbConfig = {
   // password: process.env.BOTKIT_STORAGE_POSTGRES_PASSWORD || 'botkit',
   // host: process.env.BOTKIT_STORAGE_POSTGRES_HOST || 'localhost',
   // port: process.env.BOTKIT_STORAGE_POSTGRES_PORT || '5432'
-  postgresUri : process.env.postgresUri || 'postgres://botkit:botkit@localhost:5432/botkit_test'
+  postgresUri : process.env.postgresUri || 'postgres://botkit:botkit@localhost:5432/botkit_test',
+  ssl: true
 };
 
 const pgClient = new pg.Client(dbConfig);
